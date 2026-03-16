@@ -6,6 +6,8 @@ from fuzzywuzzy import fuzz
 import distance
 import re
 from bs4 import BeautifulSoup
+import nltk
+nltk.download('stopwords')
 
 rf = pickle.load(open("model.pkl","rb"))
 cv = pickle.load(open("cv.pkl","rb"))
